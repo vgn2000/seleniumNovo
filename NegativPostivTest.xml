@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NegativLoginTest" verbose="1" parallel="tests" >
+ 
+  
+  
+   <test name="LoginNegativTest">
+    <classes>
+      <class name="TestCases.LoginNegativTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="NegativeUsernameTest-CH">
+		<parameter name="username" value="incorrectUsername"></parameter>
+		<parameter name="password" value="SuperSecretPassword!"></parameter>
+		<parameter name="expectedMessage" value="Your username is invalid!"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="TestCases.NegativeLogInTests">
+			</class>
+		</classes>
+	</test>
+  
+  
+</suite> <!-- Suite -->
+<!-- parallel="tests" thread-count="2" -->
