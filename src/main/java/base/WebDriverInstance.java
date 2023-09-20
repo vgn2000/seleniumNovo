@@ -70,6 +70,9 @@ public class WebDriverInstance {
 		   
 		    driver.manage().window().maximize();
 		    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 // deletes all cookies
+		  
+            driver.manage().deleteAllCookies();
 		    
 		    return driver;
 	  

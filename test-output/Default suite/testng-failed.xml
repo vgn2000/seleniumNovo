@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="uk.co.automationtesting.ChallangeNovo.OrderCompleteTest">
+      <class name="TestCases.SeachingTripTest01">
         <methods>
           <include name="setup"/>
-          <include name="endToEndTeste"/>
-          <include name="endToEndTest2"/>
+          <include name="startingFirstJourning"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- uk.co.automationtesting.ChallangeNovo.OrderCompleteTest -->
+      </class> <!-- TestCases.SeachingTripTest01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
